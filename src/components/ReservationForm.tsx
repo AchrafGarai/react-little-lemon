@@ -4,9 +4,7 @@ import * as Yup from 'yup';
 
 
  const SignupSchema = Yup.object().shape({
-   name: Yup.string()
-     .min(2, 'Name is too Short!')
-     .max(50, 'Too Long!')
+   name: Yup.date()
      .required('This field is required!'),
     message: Yup.string()
      .min(2, 'Your message is too short!')
@@ -42,12 +40,10 @@ export default function ReservationForm() {
               htmlFor="">
                 Name
             </label> 
-            <Field 
-              placeholder='Name' 
-              name="name" />
-              <div className='error' >
-                <ErrorMessage name="name" />
-              </div>
+            <Field placeholder='Name' name="name" type='date' />
+            <div className='error' >
+              <ErrorMessage name="name" />
+            </div>
           </div>
           <div 
             className='flex flex-col gap-2'>
@@ -68,7 +64,6 @@ export default function ReservationForm() {
               htmlFor="">Type of enquiry
             </label> 
             <Field 
-              placeholder='Name' 
               component="select"
               className='p-4 border border-slate-300 rounded-lg bg-white' 
               name="enquiry">
@@ -91,7 +86,7 @@ export default function ReservationForm() {
           <button type="submit" className='p-4 bg-slate-900 rounded-lg text-white flex flex-row items-center justify-center'>Submit</button>
         </Form> 
     </Formik>
-    
+
   )
 }
 
