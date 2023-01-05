@@ -1,12 +1,21 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
     <footer>
 
         <ul className='flex'>
-          <li><a href="/home">Home</a></li>        
-          <li><a href="/blog">Reserve a table</a></li>
+            <li>
+              <Link to={`/`}>
+                  <a >Home</a>
+              </Link>  
+            </li>        
+            <li>
+              <Link to={`/booking`}>
+                <a>Reserve a table</a>
+              </Link> 
+            </li>
         </ul>
 
       <div>
