@@ -4,7 +4,7 @@ function Home() {
   return (
     <>
       <section className='hero-section'>
-        <div className='two-col-grid'>
+        <div className='grid two-col-grid'>
             <div>
               <h1>Little Lemon</h1>
               <h3>Chicago</h3>

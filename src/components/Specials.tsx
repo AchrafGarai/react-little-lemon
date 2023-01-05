@@ -6,7 +6,7 @@ function Specials() {
   return (
     <div>
         <h1>Specials</h1>
-        <div className='three-col-grid'>
+        <div className='grid three-col-grid'>
             {products.map(product =>
                 <ProductCard product={product} />
                 )}

@@ -129,17 +129,20 @@ nav > ul{
     color: white;
     margin: 4rem 0 8rem 0;
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:  2rem;
+  row-gap: 2rem;
+}
 
 .two-col-grid{
-  display: grid;
   grid-template-columns: 1fr 1fr;
   gap:  2rem;
 }
 
 .three-col-grid{
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap:  2rem;
 }
 
 .hero-section-image{
@@ -210,4 +213,13 @@ form{
   width: 100%;
   max-width: 640px;
   margin-bottom: 4rem;
+}
+
+@media (max-width: 960px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
 }

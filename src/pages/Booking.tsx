@@ -5,7 +5,7 @@ function Booking() {
   return (
     <>
     <section className='hero-section'>
-      <div className='two-col-grid'>
+      <div className='grid two-col-grid'>
           <div>
             <h1>Make a reservation</h1>
             <p>Make a reservation now and get a discout for your next time at Little Lemon.</p>
